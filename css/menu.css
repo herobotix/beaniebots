@@ -1,0 +1,104 @@
+body {
+	background-color: #dddddd; /*background color*/
+	margin: 0; /*outer border*/
+	color: #020202; /*border color*/
+	transition: background-color 0.3s;
+}
+
+body.drkmd {
+	background-color: #222222; /*darkmode background color*/
+	color: #dddddd;
+}
+
+.nvbartitle {
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 1px 1px;
+	color: #009fcf;
+	/*background-image: linear-gradient(#000000, #444444);*/
+	/*transition: background-image 5s;*/
+	background-image: linear-gradient(#7f7f7f, #3b3b3b);
+}
+
+body.drkmd .nvbartitle {
+	/*background-image: linear-gradient(#777777, #bbbbbb);*/
+}
+
+.nvbartitle img {
+	max-width: 85%; /*max image width*/
+	height: auto; /*image auto resizing*/
+}
+
+.nvbartitle > a:hover {
+	opacity: 0.90;
+}
+
+.nvbartitle > img:hover {
+	opacity: 0.90;
+}
+
+.nvbar {
+	border-style: solid hidden;
+	border-color: #222277 #000000 #222255;
+}
+
+.nvbar > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333388; /*navbar color*/
+	font-size: 1.2em; /*navbar font size*/
+}
+
+.nvbar > ul > span > li {
+	float: left; /*Side the left navbar buttons are located*/
+}
+
+.nvbar > ul > li {
+	float: right; /*Side the right navbar buttons are located*/
+}
+
+.nvbar > ul > li > a {
+	display: block; /*makes padding visible*/
+	color: #cfcfcf; /*right navbar text color*/
+	text-align: center;
+	padding: 8px; /*right navbar padding*/
+	/*order= top right bottom left*/
+	background-color: #333388; /* right navbar button color*/
+	text-decoration: none;
+}
+
+.nvbar > ul > span > li > a {
+	display: block; /*makes padding visible*/
+	color: #cfcfcf; /*left navbar text color*/
+	text-align: center;
+	padding: 8px; /*left navbar padding*/
+	/*largest navbar padding = navbar size*/
+	background-color: #333388; /*left navbar button color*/
+	text-decoration: none;
+}
+
+.nvbar > ul > li > a:hover {
+	background-color: #222288; /*selected navbar button color*/
+}
+
+.nvbar > ul > li.selected {
+	display: block;
+	color: #cfcfcf;
+	text-align: center;
+	padding: 8px;
+	background-color: #111177;
+}
+
+.template {
+	display: none;
+}
+
+#drkmdbtn {
+	max-width: 100%; /*max image width*/
+	height: auto; /*image auto resizing*/
+	position: fixed;
+	right: 3px;
+	top: 3px;
+}
