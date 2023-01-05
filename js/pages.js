@@ -26,8 +26,8 @@ ready(function (){
 		pageBody.textContent = "";
 		pageBody.appendChild(page);
 	}
-	pages.teams = function() { /*teams template*/
-		page = document.getElementsByClassName("teams template")[0].cloneNode(true);
+	pages.teams = function() { /*members template*/
+		page = document.getElementsByClassName("members template")[0].cloneNode(true);
 		page.classList.remove("template");
 		pageBody.textContent = "";
 		pageBody.appendChild(page);
@@ -47,10 +47,10 @@ ready(function (){
 		
 	function onRedir () {
 		if (location.hash === "#volunteer") pages.volunteer();
-		else if (location.hash === "#about") pages.about();
-		else if (location.hash === "#videos") pages.videos();
-		else if (location.hash === "#teams") pages.teams();
-		else if (location.hash === "#donations") pages.donations();
+		/*else if (location.hash === "#about") pages.about();
+		else if (location.hash === "#videos") pages.videos();*/
+		else if (location.hash === "#members") pages.members();
+		/*else if (location.hash === "#donations") pages.donations();*/
 		else pages.homepage();
 	}
 	

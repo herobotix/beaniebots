@@ -1,0 +1,48 @@
+th, td {
+  padding: 0;
+  text-align: left;
+}
+
+.teamMembers {
+height: 100px;
+width: 90%;
+justify-content: center;
+}
+
+.teamMembers .memberCard {
+width: 100%;
+height: 100%px;
+background-color: #bd9015;
+}
+
+.rowTop{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 111%;
+height: 100px;
+margin-top: 100px;
+}
+
+.rowMiddle{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 111%;
+height: 100px;
+margin-top: 110px;
+}
+
+.rowBottom{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 111%;
+height: 100px;
+margin-top: 110px;
+}
+
+.teamPageTitle{
+text-align: center;
+font-size: 50px;
+}
