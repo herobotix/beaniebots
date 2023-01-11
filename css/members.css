@@ -7,23 +7,29 @@ th:hover {
 	background-color: #9999ff;
 }
 
-.teamMembers {
-	height: 100px;
-	width: auto;
+.teamPage {
+	/* display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	margin: auto; */
 }
 
-.teamMembers .memberCard {
+.teamPage .memberCard {
 	background-color: #cccccc;
-	border-style: solid solid hidden hidden;
+	border-style: solid solid solid solid;
 }
 
-.teamMembers .memberCard.drkmd {
+.teamPage .memberCard.drkmd {
 	background-color: #333333;
 }
 
 .membersRow{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
 }
 
 .teamPageTitle{

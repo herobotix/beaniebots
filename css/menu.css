@@ -97,6 +97,12 @@ body.drkmd .nvbartitle {}
 	display: none;
 }
 
+.pageTop {
+	position: sticky;
+	top: 0px;
+	left: 50%;
+}
+
 #drkmdbtn {
 	max-width: 100%; /*max image width*/
 	height: auto; /*image auto resizing*/
