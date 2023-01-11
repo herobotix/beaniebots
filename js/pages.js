@@ -26,7 +26,7 @@ ready(function (){
 		pageBody.textContent = "";
 		pageBody.appendChild(page);
 	}
-	pages.teams = function() { /*members template*/
+	pages.members = function() { /*members template*/
 		page = document.getElementsByClassName("members template")[0].cloneNode(true);
 		page.classList.remove("template");
 		pageBody.textContent = "";
