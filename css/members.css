@@ -1,35 +1,35 @@
 th, td {
   padding: 0;
   text-align: left;
+  vertical-align: top;
 }
 
 th:hover {
 	background-color: #9999ff;
 }
 
+body.drkmd th:hover {
+	background-color: #990000
+}
+
 .teamPage {
-	/* display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin: auto; */
-}
-
-.teamPage .memberCard {
-	background-color: #cccccc;
-	border-style: solid solid solid solid;
-}
-
-.teamPage .memberCard.drkmd {
-	background-color: #333333;
-}
-
-.membersRow{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+}
+
+.memberCard {
+	border-style: solid solid solid solid;
+}
+
+.membersRow{
+	background-color: #cccccc;
+}
+
+body.drkmd .membersRow {
+	background-color: #333333;
 }
 
 .teamPageTitle{
