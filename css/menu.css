@@ -1,5 +1,7 @@
 body {
-	background-color: #dddddd; /*background color*/
+	background-color: #00bbee; /*background color
+	/*background-color: #dddddd; /*background color*/
+	/*background-image: url(../images/backgrounds/background.png); /*background image*/
 	margin: 0; /*outer border*/
 	color: #020202; /*border color*/
 	transition: background-color 0.3s;
@@ -7,6 +9,7 @@ body {
 
 body.drkmd {
 	background-color: #222222; /*darkmode background color*/
+	/*background-image: url(../images/backgrounds/drkmd_background.png); /*background image*/
 	color: #dddddd;
 }
 

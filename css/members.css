@@ -1,11 +1,13 @@
 th, td {
-  padding: 0;
-  text-align: left;
-  vertical-align: top;
+	padding: 0;
+	text-align: left;
+	vertical-align: top;
+	transition: background-color 0.2s;
 }
 
 th:hover {
 	background-color: #9999ff;
+	transition: background-color 0.2s;
 }
 
 body.drkmd th:hover {
@@ -22,13 +24,11 @@ body.drkmd th:hover {
 
 .memberCard {
 	border-style: solid solid solid solid;
-}
-
-.membersRow{
 	background-color: #cccccc;
+	transition: background-color 0.3s;
 }
 
-body.drkmd .membersRow {
+body.drkmd .memberCard {
 	background-color: #333333;
 }
 
