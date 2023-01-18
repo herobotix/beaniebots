@@ -50,7 +50,7 @@ ready(function (){
 		/*else if (location.hash === "#about") pages.about();
 		else if (location.hash === "#videos") pages.videos();*/
 		else if (location.hash === "#members") pages.members();
-		/*else if (location.hash === "#donations") pages.donations();*/
+		else if (location.hash === "#donations") pages.donations();
 		else pages.homepage();
 	}
 	
