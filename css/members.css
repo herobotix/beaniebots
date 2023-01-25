@@ -1,0 +1,39 @@
+th, td {
+	padding: 0;
+	text-align: left;
+	vertical-align: top;
+	transition: background-color 0.2s;
+}
+
+th:hover {
+	background-color: #9999ff;
+	transition: background-color 0.2s;
+}
+
+body.drkmd th:hover {
+	background-color: #990000
+}
+
+.teamPage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.memberCard {
+	border-style: solid solid solid solid;
+	background-color: #cccccc;
+	transition: background-color 0.3s;
+}
+
+body.drkmd .memberCard {
+	background-color: #333333;
+}
+
+.teamPageTitle{
+	text-align: center;
+	font-size: 3.12em;
+	margin-bottom: 100px;
+}
