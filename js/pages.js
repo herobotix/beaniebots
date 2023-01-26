@@ -32,8 +32,8 @@ ready(function (){
 		pageBody.textContent = "";
 		pageBody.appendChild(page);
 	}
-	pages.donations = function() { /*donations template*/
-		page = document.getElementsByClassName("donations template")[0].cloneNode(true);
+	pages.trophy_shelf = function() { /*trophy_shelf template*/
+		page = document.getElementsByClassName("trophy_shelf template")[0].cloneNode(true);
 		page.classList.remove("template");
 		pageBody.textContent = "";
 		pageBody.appendChild(page);
@@ -50,7 +50,7 @@ ready(function (){
 		/*else if (location.hash === "#about") pages.about();
 		else if (location.hash === "#videos") pages.videos();*/
 		else if (location.hash === "#members") pages.members();
-		else if (location.hash === "#donations") pages.donations();
+		else if (location.hash === "#trophy_shelf") pages.trophy_shelf();
 		else pages.homepage();
 	}
 	

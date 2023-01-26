@@ -1,0 +1,7 @@
+.trophy_shelf {
+	margin: 2em;
+}
+
+.trophy_shelf > div {
+	background-image: url(../images/#.png);
+}
