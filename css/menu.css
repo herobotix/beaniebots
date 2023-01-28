@@ -121,8 +121,8 @@ body.drkmd div#pageBody {
 
 
 #drkmdbtn {
-	max-width: 100%; /*max image width*/
-	height: auto; /*image auto resizing*/
+	width: 7vh;
+	height: 7vh;
 	position: fixed;
 	right: 3px;
 	top: 3px;
