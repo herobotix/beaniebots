@@ -1,7 +1,16 @@
-.trophy_shelf {
-	margin: 2em;
+.trophy_shelf > div {
+	/* background-image: url(../images/#.png); */
 }
 
-.trophy_shelf > div {
-	background-image: url(../images/#.png);
+.trophy_shelf img {
+	max-width: 40vh;
+	display: block;
+}
+
+.trophy_shelf th:hover.trphy_shlf{
+	background-color: #cccccc;
+}
+
+body.drkmd .trophy_shelf th:hover.trphy_shlf{
+	background-color: #333333;
 }
