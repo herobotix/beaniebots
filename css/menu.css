@@ -120,11 +120,11 @@ body.drkmd {
 	color: #dddddd;
 }
 
-#drkmdbtn.menu {
+#drkmdbtnMenu.menu {
 	display: none;
 }
 
-#drkmdbtn.title {
+#drkmdbtnTitle.title {
 	width: 7vh;
 	height: 7vh;
 	position: fixed;
@@ -139,8 +139,36 @@ body.drkmd {
 }
 
 .nvbarimg {
-		display: none;
-	}
+	display: none;
+}
+
+.homepageText {
+	background: #222222;
+	background-image: url(../images/backgrounds/drkmd_background.png);
+	height: 100vh;
+	margin: 3vh;
+	padding: 0.4vh;
+	border-style: solid;
+	border-color: #222222;
+	border-width: 0.7vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #dddddd;
+	transition: color 0.2s;
+	transition: background-color 0.3s;
+	transition: background-image 0.3s;
+}
+
+body.drkmd .homepageText {
+	background-color: #0077ee;
+	background-image: url(../images/backgrounds/background.png);
+	color: #000000;
+	border-color: #000000;
+	transition: border-color 0.3s;
+	transition: background-color 0.3s;
+	transition: background-image 0.3s;
+}
 
 @media only screen and (max-width: 700px) {
 	
@@ -193,11 +221,11 @@ body.drkmd {
 		border-width: 2px;
 	}
 	
-	.nvbar:hover > div #drkmdbtn.menu {
+	.nvbar:hover > div #drkmdbtnMenu.menu {
 		display: block;
 	}
 	
-	#drkmdbtn.title {
+	#drkmdbtnTitle.title {
 		display: none;
 	}
 	
