@@ -143,6 +143,7 @@ body.drkmd {
 }
 
 .homepageText {
+	font-size: 150%;
 	background: #222222;
 	background-image: url(../images/backgrounds/drkmd_background.png);
 	height: 100vh;
@@ -164,13 +165,19 @@ body.drkmd .homepageText {
 	background-color: #0077ee;
 	background-image: url(../images/backgrounds/background.png);
 	color: #000000;
-	border-color: #000000;
+	border-color: #111111;
 	transition: border-color 0.3s;
 	transition: background-color 0.3s;
 	transition: background-image 0.3s;
 }
 
 @media only screen and (max-width: 700px) {
+	
+	.nvbartitle {
+		border-style:hidden hidden solid;
+		border-color: #222222;
+		margin-bottom: 0.35vh;
+	}
 	
 	.nvbar {
 		position: absolute;
