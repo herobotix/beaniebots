@@ -1,8 +1,10 @@
 th, td {
-	padding: 0;
+	padding: 0.1;
 	text-align: left;
 	vertical-align: top;
 	transition: background-color 0.2s;
+	border-style: hidden hidden solid ;
+	border-width: 0.1vh;
 }
 
 th:hover {
@@ -10,11 +12,18 @@ th:hover {
 	transition: background-color 0.2s;
 }
 
+tr th:first-child {
+	font-family: Lucida Console, Monaco, Monospace, Georgia, Arial, Sans-serif;
+	font-size:100%;
+}
+
 body.drkmd th:hover {
 	background-color: #990000
 }
 
 .teamPage {
+	font-family: Monaco, Monospace, Georgia, Arial, Sans-serif;
+	font-size:100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

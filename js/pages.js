@@ -43,7 +43,8 @@ ready(function (){
 		document.body.classList.toggle("drkmd")
 	}
 	
-	document.getElementById("drkmdbtn").addEventListener("click", drkmdtoggle );
+	document.getElementById("drkmdbtnMenu").addEventListener("click", drkmdtoggle );
+	document.getElementById("drkmdbtnTitle").addEventListener("click", drkmdtoggle );
 		
 	function onRedir () {
 		if (location.hash === "#volunteer") pages.volunteer();

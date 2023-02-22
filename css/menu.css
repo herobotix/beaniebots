@@ -1,7 +1,7 @@
 body {
 	margin: 0; /*outer border*/
-	color: #020202; /*border color*/;
-	
+	color: #020202: /*border color*/;
+	font-family: Georgia, Arial, Sans-serif;
 	background-color: #0077ee; /*background color*/
 	background-image: url(../images/backgrounds/background.png); /*background image*/
 	background-repeat: no-repeat;
@@ -11,6 +11,20 @@ body {
 	transition: background-image 0.3s;
 }
 
+.template {
+	display: none;
+}
+
+/* -~Header~- */
+ 
+ .pageTop {
+	position: sticky;
+	top: 0px;
+	left: 50%;
+}
+ 
+/* Navbar Title */
+
 .nvbartitle {
 	text-transform: uppercase;
 	text-align: center;
@@ -18,8 +32,6 @@ body {
 	color: #009fcf;
 	background-image: linear-gradient(#7f7f7f, #3b3b3b);
 }
-
-body.drkmd .nvbartitle {}
 
 .nvbartitle img {
 	max-width: 85%; /*max image width*/
@@ -33,6 +45,8 @@ body.drkmd .nvbartitle {}
 .nvbartitle > img:hover {
 	opacity: 0.90;
 }
+
+/* Navbar Menu */
 
 .nvbar {
 	border-style: solid hidden;
@@ -96,23 +110,55 @@ body.drkmd .nvbartitle {}
 	background-color: #111177;
 }
 
-.template {
-	display: none;
-}
 
-.pageTop {
-	position: sticky;
-	top: 0px;
-	left: 50%;
-}
-
-.ovrflw-Auto {
-	overflow: auto;
-}
 
 div#pageBody {
 	height: 100vh;
 }
+
+#drkmdbtnMenu.menu {
+	display: none;
+}
+
+#drkmdbtnTitle.title {
+	width: 7vh;
+	height: 7vh;
+	position: fixed;
+	right: 3px;
+	top: 3px;
+	border: hidden;
+	display: block;
+}
+
+.nvbar > div {
+	display: none;
+}
+
+.nvbarimg {
+	display: none;
+}
+
+.homepageText {
+	font-family: Garamond, Georgia, Arial, Sans-serif;
+	font-size: 150%;
+	background: #222222;
+	background-image: url(../images/backgrounds/drkmd_background.png);
+	height: 100vh;
+	margin: 3vh;
+	padding: 0.4vh;
+	border-style: solid;
+	border-color: #222222;
+	border-width: 0.7vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #dddddd;
+	transition: color 0.2s;
+	transition: background-color 0.3s;
+	transition: background-image 0.3s;
+}
+
+/* Darkmode */
 
 body.drkmd {
 	background-color: #222222; /*darkmode background color*/
@@ -120,29 +166,33 @@ body.drkmd {
 	color: #dddddd;
 }
 
-
-#drkmdbtn {
-	width: 7vh;
-	height: 7vh;
-	position: fixed;
-	right: 3px;
-	top: 3px;
-	border: hidden;
+body.drkmd .homepageText {
+	background-color: #0077ee;
+	background-image: url(../images/backgrounds/background.png);
+	color: #000000;
+	border-color: #111111;
+	transition: border-color 0.3s;
+	transition: background-color 0.3s;
+	transition: background-image 0.3s;
 }
 
-.nvbar > div {
-	display: none;
-}
+/* Breakpoint ( phone only ) */
 
 @media only screen and (max-width: 700px) {
 	
-	.nvbar > ul {
-		display: none;
-		position: sticky;
-		text-align: left;
-		width: 19vh;
-		padding: 12px 16px;
-		z-index: 1;
+	.nvbartitle {
+		border-style:hidden hidden solid;
+		border-color: #222222;
+		margin-bottom: 0.35vh;
+	}
+	
+	.nvbar {
+		position: absolute;
+		display: inline-block;
+		overflow: hidden;
+		border-style: solid solid solid hidden;
+		border-color: #222277 #333355 #222255 #000000;
+		
 	}
 	
 	.nvbar > div img {
@@ -151,34 +201,55 @@ body.drkmd {
 		border-color: #222244 #222244 #111133 #111133;
 		border-style: solid;
 		border-width: 2px;
+		text-align: top;
+		text-align: left;
+	}
+	
+	.nvbarimg {
+		height: calc(1.2em + 16px);
+		display: block;
+		border-color: #222244 #222244 #111133 #111133;
+		border-style: solid;
+		border-width: 2px;
+		text-align: top;
+		text-align: left;
+	}
+	
+	.nvbar:hover > div img {
+		display: none;
 	}
 	
 	.nvbar > div {
 		display: block;
 	}
 	
-	.nvbar > ul > li > img.imgdrpdwnrem {
+	.nvbar ul li img.remdrpdwnimg {
 		display: none;
 	}
 	
 	.nvbar > ul > li > img {
+		height: calc(1.0em + 16px);
+		display: block;
+		border-color: #222244 #222244 #111133 #111133;
+		border-style: solid;
+		border-width: 2px;
+	}
+	
+	.nvbar:hover > div #drkmdbtnMenu.menu {
 		display: block;
 	}
 	
-	#drkmdbtn {
-		position: relative;
-		border-style: solid solid solid hidden;
-		border-color: #222277 #333355 #222255 #000000;
-	
+	#drkmdbtnTitle.title {
+		display: none;
 	}
 	
-	.nvbar {
-		position: relative;
-		display: inline-block;
-		overflow: hidden;
-		border-style: solid solid solid hidden;
-		border-color: #222277 #333355 #222255 #000000;
-		
+	.nvbar > ul {
+		display: none;
+		position: sticky;
+		text-align: left;
+		width: 19vh;
+		padding: 12px 16px;
+		z-index: 1;
 	}
 	
 	.nvbar:hover > ul {
