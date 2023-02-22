@@ -1,7 +1,7 @@
 body {
 	margin: 0; /*outer border*/
-	color: #020202; /*border color*/;
-	
+	color: #020202: /*border color*/;
+	font-family: Georgia, Arial, Sans-serif;
 	background-color: #0077ee; /*background color*/
 	background-image: url(../images/backgrounds/background.png); /*background image*/
 	background-repeat: no-repeat;
@@ -11,6 +11,20 @@ body {
 	transition: background-image 0.3s;
 }
 
+.template {
+	display: none;
+}
+
+/* -~Header~- */
+ 
+ .pageTop {
+	position: sticky;
+	top: 0px;
+	left: 50%;
+}
+ 
+/* Navbar Title */
+
 .nvbartitle {
 	text-transform: uppercase;
 	text-align: center;
@@ -18,8 +32,6 @@ body {
 	color: #009fcf;
 	background-image: linear-gradient(#7f7f7f, #3b3b3b);
 }
-
-body.drkmd .nvbartitle {}
 
 .nvbartitle img {
 	max-width: 85%; /*max image width*/
@@ -33,6 +45,8 @@ body.drkmd .nvbartitle {}
 .nvbartitle > img:hover {
 	opacity: 0.90;
 }
+
+/* Navbar Menu */
 
 .nvbar {
 	border-style: solid hidden;
@@ -96,28 +110,10 @@ body.drkmd .nvbartitle {}
 	background-color: #111177;
 }
 
-.template {
-	display: none;
-}
 
-.pageTop {
-	position: sticky;
-	top: 0px;
-	left: 50%;
-}
-
-.ovrflw-Auto {
-	overflow: auto;
-}
 
 div#pageBody {
 	height: 100vh;
-}
-
-body.drkmd {
-	background-color: #222222; /*darkmode background color*/
-	background-image: url(../images/backgrounds/drkmd_background.png); /*darkmode background image*/
-	color: #dddddd;
 }
 
 #drkmdbtnMenu.menu {
@@ -143,6 +139,7 @@ body.drkmd {
 }
 
 .homepageText {
+	font-family: Garamond, Georgia, Arial, Sans-serif;
 	font-size: 150%;
 	background: #222222;
 	background-image: url(../images/backgrounds/drkmd_background.png);
@@ -161,6 +158,14 @@ body.drkmd {
 	transition: background-image 0.3s;
 }
 
+/* Darkmode */
+
+body.drkmd {
+	background-color: #222222; /*darkmode background color*/
+	background-image: url(../images/backgrounds/drkmd_background.png); /*darkmode background image*/
+	color: #dddddd;
+}
+
 body.drkmd .homepageText {
 	background-color: #0077ee;
 	background-image: url(../images/backgrounds/background.png);
@@ -170,6 +175,8 @@ body.drkmd .homepageText {
 	transition: background-color 0.3s;
 	transition: background-image 0.3s;
 }
+
+/* Breakpoint ( phone only ) */
 
 @media only screen and (max-width: 700px) {
 	
