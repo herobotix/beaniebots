@@ -110,10 +110,11 @@ body {
 	background-color: #111177;
 }
 
-
+/* Misc */
 
 div#pageBody {
 	height: 100vh;
+	margin-top: calc(calc(1.2em + 16px)*1.5);
 }
 
 #drkmdbtnMenu.menu {
@@ -213,6 +214,18 @@ body.drkmd .homepageText {
 		border-width: 2px;
 		text-align: top;
 		text-align: left;
+	}
+	
+	.nvbarimgright {
+		height: calc(1.2em + 16px);
+		display: block;
+		border-color: #222244 #222244 #111133 #111133;
+		border-style: solid;
+		border-width: 2px;
+		text-align: top;
+		text-align: right;
+		float: right;
+		position: static;
 	}
 	
 	.nvbar:hover > div img {
