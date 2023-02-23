@@ -1,0 +1,32 @@
+.trophy_shelf > div {
+	/* background-image: url(../images/#.png); */
+}
+
+.trophy_shelf img {
+	max-width: 40vh;
+	display: block;
+	border-style: hidden;
+}
+
+.trophy_shelf th, td {
+	padding: 0;
+	border-style: hidden;
+}
+
+.trophy_shelf th p, td p {
+	border-style: solid hidden hidden;
+	border-color: #222222;
+	margin: 0;
+}
+
+body.drkmd .trophy_shelf th p, td p {
+	border-color: #222222;
+}
+
+.trophy_shelf th:hover.trphy_shlf{
+	background-color: #cccccc;
+}
+
+body.drkmd .trophy_shelf th:hover.trphy_shlf{
+	background-color: #333333;
+}
