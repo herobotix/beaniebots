@@ -159,6 +159,10 @@ div#pageBody {
 	transition: background-image 0.3s;
 }
 
+.nvbarimgright {
+	display: none;
+}
+
 /* Darkmode */
 
 body.drkmd {
