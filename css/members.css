@@ -42,6 +42,7 @@ body.drkmd .memberCard {
 }
 
 .teamPageTitle{
+	position: relative;
 	text-align: center;
 	font-size: 3.12em;
 	margin-bottom: 100px;
