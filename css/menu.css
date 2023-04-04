@@ -153,7 +153,7 @@ div#pageBody {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	color: #dddddd;
+	color: #00ffff;
 	transition: color 0.2s;
 	transition: background-color 0.3s;
 	transition: background-image 0.3s;
@@ -174,7 +174,7 @@ body.drkmd {
 body.drkmd .homepageText {
 	background-color: #0077ee;
 	background-image: url(../images/backgrounds/background.png);
-	color: #000000;
+	color: #000066;
 	border-color: #111111;
 	transition: border-color 0.3s;
 	transition: background-color 0.3s;
