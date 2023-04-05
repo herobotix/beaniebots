@@ -41,9 +41,21 @@ body.drkmd .memberCard {
 	background-color: #333333;
 }
 
-.teamPageTitle{
-	position: relative;
+.teamPageTitle {
+	text-align: center;
+}
+
+.teamPageTitle > div {
+	border:solid 1vh transparent;
+	background-image: url(../images/text_image.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
 	text-align: center;
 	font-size: 3.12em;
+	padding-bottom:1vh;
+	padding-left:1vw;
+	padding-right:1vw;
 	margin-bottom: 100px;
+	margin-left: auto;
 }
