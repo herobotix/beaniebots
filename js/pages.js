@@ -8,20 +8,8 @@ ready(function (){
 		pageBody.textContent = "";
 		pageBody.appendChild(page);
 	}
-	pages.volunteer = function() { /*volunteer template*/
-		page = document.getElementsByClassName("volunteer template")[0].cloneNode(true);
-		page.classList.remove("template");
-		pageBody.textContent = "";
-		pageBody.appendChild(page);
-	}
-	pages.about = function() { /*about template*/
-		page = document.getElementsByClassName("about template")[0].cloneNode(true);
-		page.classList.remove("template");
-		pageBody.textContent = "";
-		pageBody.appendChild(page);
-	}
-	pages.videos = function() { /*videos template*/
-		page = document.getElementsByClassName("videos template")[0].cloneNode(true);
+	pages.blank = function() { /*blank template*/
+		page = document.getElementsByClassName("blank template")[0].cloneNode(true);
 		page.classList.remove("template");
 		pageBody.textContent = "";
 		pageBody.appendChild(page);
@@ -47,9 +35,7 @@ ready(function (){
 	document.getElementById("drkmdbtnTitle").addEventListener("click", drkmdtoggle );
 		
 	function onRedir () {
-		if (location.hash === "#volunteer") pages.volunteer();
-		/*else if (location.hash === "#about") pages.about();
-		else if (location.hash === "#videos") pages.videos();*/
+		if (location.hash === "#blank") pages.blank();
 		else if (location.hash === "#members") pages.members();
 		else if (location.hash === "#trophy_shelf") pages.trophy_shelf();
 		else pages.homepage();
