@@ -30,7 +30,9 @@ body {
 	text-align: center;
 	text-shadow: 1px 1px;
 	color: #009fcf;
-	background-image: linear-gradient(#7f7f7f, #3b3b3b);
+	background-image: url(../images/backgrounds/drkmd_background_crimsongold.png);
+	transition: background-image 0.5s;
+	background-size: cover;
 }
 
 .nvbartitle img {
@@ -86,7 +88,7 @@ body {
 	/*order= top right bottom left*/
 	background-color: #333388; /* right navbar button color*/
 	text-decoration: none;
-	transition: color 0.3s;
+	transition: color 0s;
 	height: 100%;
 }
 
@@ -177,23 +179,30 @@ div#pageBody {
 		color: #dddddd;
 	}
 	
+	body.drkmd .nvbartitle {
+		background-image: url(../images/backgrounds/drkmd_background_crimsonblue.png); /*darkmode background image*/
+	}
+	
 	body.drkmd .nvbar {
-		border-color: #dd8800 #000000 #bb6600;
-		background-color: #ffcc00; /*navbar color*/
+		border-color: #dd8000 #000000 #ca6400;
+		background-color: #333388; /*navbar color*/
+		background-image: linear-gradient(#eeaa00, #dd9900);
 	}
 	
 	body.drkmd .nvbar > ul li > a {
+	transition: color 0s;
 	color: #994400;
 }
 	
 	body.drkmd .nvbar > ul li > a:hover {
 	background-color: #bb8800; /*selected navbar button color*/
+	background-image: linear-gradient(#ffbb00, #eeaa00);
 	color: #661100;
 }
 	
 	body.drkmd .homepageText {
 		background-color: #0077ee;
-		background-image: url(../images/backgrounds/drkmd_background_red.png);
+		background-image: url(../images/backgrounds/drkmd_background_brown.png);
 		color: #ffe300;
 		text-shadow: 0 0 0.5vw #ffe300;
 		border-color: #111111;
