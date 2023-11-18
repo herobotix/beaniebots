@@ -33,21 +33,30 @@ body {
 	background-image: url(../images/backgrounds/drkmd_background_crimsongold.png);
 	transition: background-image 0.5s;
 	background-size: cover;
-	height: 10%;
+	height: 8.5vw;
 }
 
-.nvbartitle img {
-	max-width: 85%; /*max image width*/
-	height: auto; /*image auto resizing*/
+.nvbartitle div {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/logos/logo_blue.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
-.nvbartitle > a:hover {
-	opacity: 0.90;
+.nvbartitle a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
 }
 
-.nvbartitle > img:hover {
-	opacity: 0.90;
+.nvbartitle a:hover div{
+	opacity: 0.81;
 }
+
 
 /* Navbar Menu */
 
@@ -189,6 +198,10 @@ div#pageBody {
 	
 	body.drkmd .nvbartitle {
 		background-image: url(../images/backgrounds/drkmd_background_crimsonblue.png); /*darkmode background image*/
+	}
+	
+	body.drkmd .nvbartitle div {
+		background-image: url(../images/logos/logo.png);
 	}
 	
 	body.drkmd .nvbar {
