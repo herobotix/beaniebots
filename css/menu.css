@@ -16,8 +16,8 @@ body {
 }
 
 /* -~Header~- */
- 
- .pageTop {
+
+.pageTop {
 	position: sticky;
 	top: 0px;
 	left: 50%;
@@ -30,21 +30,33 @@ body {
 	text-align: center;
 	text-shadow: 1px 1px;
 	color: #009fcf;
-	background-image: linear-gradient(#7f7f7f, #3b3b3b);
+	background-image: url(../images/backgrounds/drkmd_background_crimsongold.png);
+	transition: background-image 0.5s;
+	background-size: cover;
+	height: 8.5vw;
 }
 
-.nvbartitle img {
-	max-width: 85%; /*max image width*/
-	height: auto; /*image auto resizing*/
+.nvbartitle div {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/logos/logo_blue.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
-.nvbartitle > a:hover {
-	opacity: 0.90;
+.nvbartitle a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
 }
 
-.nvbartitle > img:hover {
-	opacity: 0.90;
+.nvbartitle a:hover div{
+	opacity: 0.81;
 }
+
 
 /* Navbar Menu */
 
@@ -86,6 +98,8 @@ body {
 	/*order= top right bottom left*/
 	background-color: #333388; /* right navbar button color*/
 	text-decoration: none;
+	transition: color 0s;
+	height: 100%;
 }
 
 .nvbar > ul > span > li > a {
@@ -94,21 +108,24 @@ body {
 	text-align: center;
 	padding: 8px; /*left navbar padding*/
 	/*largest navbar padding = navbar size*/
-	background-color: #333388; /*left navbar button color*/
+	padding-bottom: 0; /*Height Correction*/
 	text-decoration: none;
+	transition: color 0.3s;
+	height: calc(1.0em + 12px);
 }
 
 .nvbar > ul li > a:hover {
 	background-color: #222288; /*selected navbar button color*/
+	transition: background-color 0.3s;
 }
 
-.nvbar > ul > li.selected {
+/*.nvbar > ul > li.selected {
 	display: block;
 	color: #cfcfcf;
 	text-align: center;
 	padding: 8px;
 	background-color: #111177;
-}
+}*/
 
 /* Misc */
 
@@ -117,9 +134,16 @@ div#pageBody {
 	margin-top: calc(calc(1.2em + 16px)*1.5);
 }
 
-#drkmdbtnMenu.menu {
+.nvbar > div > ul .menu {
 	display: none;
 }
+
+.nvbar > div > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
 
 #drkmdbtnTitle.title {
 	width: 7vh;
@@ -154,6 +178,7 @@ div#pageBody {
 	background-attachment: fixed;
 	background-size: cover;
 	color: #00ffff;
+	text-shadow: 0px 0px 5px #0055ff;
 	transition: color 0.2s;
 	transition: background-color 0.3s;
 	transition: background-image 0.3s;
@@ -163,31 +188,58 @@ div#pageBody {
 	display: none;
 }
 
-/* Darkmode */
-
-body.drkmd {
-	background-color: #222222; /*darkmode background color*/
-	background-image: url(../images/backgrounds/drkmd_background.png); /*darkmode background image*/
-	color: #dddddd;
+ /* Darkmode */
+	
+	body.drkmd {
+		background-color: #222222; /*darkmode background color*/
+		background-image: url(../images/backgrounds/drkmd_background.png); /*darkmode background image*/
+		color: #dddddd;
+	}
+	
+	body.drkmd .nvbartitle {
+		background-image: url(../images/backgrounds/drkmd_background_crimsonblue.png); /*darkmode background image*/
+	}
+	
+	body.drkmd .nvbartitle div {
+		background-image: url(../images/logos/logo.png);
+	}
+	
+	body.drkmd .nvbar {
+		border-color: #dd8000 #dd8000 #ca6400;
+		background-color: #333388; /*navbar color*/
+		background-image: linear-gradient(#eeaa00, #dd9900);
+	}
+	
+	body.drkmd .nvbar > ul li > a {
+	transition: color 0s;
+	color: #994400;
 }
-
-body.drkmd .homepageText {
-	background-color: #0077ee;
-	background-image: url(../images/backgrounds/background.png);
-	color: #000066;
-	border-color: #111111;
-	transition: border-color 0.3s;
-	transition: background-color 0.3s;
-	transition: background-image 0.3s;
+	
+	body.drkmd .nvbar > ul li > a:hover {
+	background-color: #bb8800; /*selected navbar button color*/
+	background-image: linear-gradient(#ffbb00, #eeaa00);
+	color: #661100;
 }
+	
+	body.drkmd .homepageText {
+		background-color: #0077ee;
+		background-image: url(../images/backgrounds/drkmd_background_brown.png);
+		color: #ffe300;
+		text-shadow: 0 0 0.5vw #ffe300;
+		border-color: #111111;
+		transition: border-color 0.3s;
+		transition: background-color 0.3s;
+		transition: background-image 0.3s;
+	}
+	
+	
+/*Breakpoint(Phone Mode)*/
 
-/* Breakpoint ( phone only ) */
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px){
 	
 	.nvbartitle {
 		border-style:hidden hidden solid;
-		border-color: #222222;
+		border-color: #222277;
 		margin-bottom: 0.35vh;
 	}
 	
@@ -197,21 +249,21 @@ body.drkmd .homepageText {
 		overflow: hidden;
 		border-style: solid solid solid hidden;
 		border-color: #222277 #333355 #222255 #000000;
-		
 	}
 	
 	.nvbar > div img {
-		height: calc(1.0em + 16px);
+		height: calc(1.0em + 3.2vh);
 		display: block;
 		border-color: #222244 #222244 #111133 #111133;
 		border-style: solid;
 		border-width: 2px;
 		text-align: top;
 		text-align: left;
+		background-color: #222277;
 	}
 	
 	.nvbarimg {
-		height: calc(1.2em + 16px);
+		height: calc(1.2em + 3.2vh);
 		display: block;
 		border-color: #222244 #222244 #111133 #111133;
 		border-style: solid;
@@ -221,7 +273,7 @@ body.drkmd .homepageText {
 	}
 	
 	.nvbarimgright {
-		height: calc(1.2em + 16px);
+		height: calc(1.2em + 3.2vh);
 		display: block;
 		border-color: #222244 #222244 #111133 #111133;
 		border-style: solid;
@@ -244,16 +296,26 @@ body.drkmd .homepageText {
 		display: none;
 	}
 	
+	.nvbar ul li {
+		float: none;
+		display: inline;
+	}
+	
+	.nvbar ul > span > li {
+		float: none;
+		display: inline;
+	}
+	
 	.nvbar > ul > li > img {
-		height: calc(1.0em + 16px);
+		height: calc(1.0em + 3.2vh);
 		display: block;
 		border-color: #222244 #222244 #111133 #111133;
 		border-style: solid;
 		border-width: 2px;
 	}
 	
-	.nvbar:hover > div #drkmdbtnMenu.menu {
-		display: block;
+	.nvbar:hover > div > ul .menu {
+		display: inline-block;
 	}
 	
 	#drkmdbtnTitle.title {
@@ -264,13 +326,20 @@ body.drkmd .homepageText {
 		display: none;
 		position: sticky;
 		text-align: left;
-		width: 19vh;
-		padding: 12px 16px;
+		padding: 2.175vh 3.2vh;
 		z-index: 1;
 	}
 	
 	.nvbar:hover > ul {
-		display: block;
+		display: inline-block;
 	}
+	
+	 /* Phone Darkmode */
+	 
+	 body.drkmd .nvbartitle {
+		border-color: #303030;
+		margin-bottom: 0.35vh;
+	}
+	
 	
 }
