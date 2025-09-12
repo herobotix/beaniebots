@@ -36,8 +36,8 @@ ready(function (){
 		
 	function onRedir () {
 		if (location.hash === "#blank") pages.blank();
-		/* else if (location.hash === "#members") pages.members();
-		else if (location.hash === "#trophy_shelf") pages.trophy_shelf(); */
+		else if (location.hash === "#members") pages.members();
+		else if (location.hash === "#trophy_shelf") pages.trophy_shelf();
 		else pages.homepage();
 	}
 	
